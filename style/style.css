@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 .poppins-font, body {
   font-family: "poppins", sans-serif;
@@ -40,6 +45,10 @@ font-weight: bold;
 
 
 /* nav-section-design */
+nav {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
 .Dextop-nav {
   display: flex;
   justify-content: space-between;
@@ -69,12 +78,16 @@ font-weight: bold;
   display: flex;
   justify-content: space-between;
   padding: 80px 0;
+  align-items: center;
 }
 .banner-content  {
   width: 582px;
 }
+.banner-content h1 {
+  margin-bottom: 30px;
+}
 .banner-content .btn {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .banner-image img {
   width: 440px;
@@ -100,20 +113,41 @@ border-bottom: 1px solid #C0CCDA;
 }
 
 /* colluction-section-design  */
-#colluction {
 
-}
 #colluction .main-container {
   padding: 100px 0;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 .colluction-container {
+text-align: center;
+}
 
+.product-box {
+padding-top: 30px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+gap: 30px;
+}
+.product {
+  padding: 17px 15px 23px 15px;
+  box-shadow: 0 5px 50px #00000020;
+  border-radius: 5px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 
 @media screen and (max-width: 576px) {
 
   /* nav-section-design */
+  nav {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
   .Dextop-nav {
     display: none;
   }
