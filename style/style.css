@@ -139,6 +139,11 @@ gap: 30px;
   flex-direction: column;
   gap: 10px;
 }
+.product h5::before {
+  content: "★★★★★" ; 
+  color: #f5b301;
+  padding-right: 5px;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -208,11 +213,8 @@ margin: 0 15px;
 
 /* product section  */
 .product-box {
-padding-top: 30px;
-display: grid;
-grid-template-columns: repeat(1, 1fr);
-grid-template-rows: repeat(1, 1fr);
-gap: 20px;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
 margin: 0 15px;
 }
 .product {
